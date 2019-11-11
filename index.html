@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+      html, body{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+      }
+      body{
+          height: 100vh;
+          
+      }
+      button{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      button{
+          background: none;
+          color: #ccc;
+          width: 240px;
+          height: 80px;
+          border: 1px solid black;
+          font-size: 18px;
+          border-radius: 4px;
+          transition: .6s;
+          overflow: hidden;
+      }
+      button:focus{
+          outline: none;
+      }
+      button:before{
+          content: '';
+          display:block;
+          position: absolute;
+          background: rgba(255,255,255,.5);
+          width: 60px;
+          height: 100%;
+          left: 0;
+          top: 0;
+          opacity: .5;
+          filter: blur(30px);
+          transform: translateX(-130px) skewX(-15deg);
+          
+      }
+      button:after{
+          content: '';
+          display: block;
+          position: absolute;
+          background: rgba(255,255,255,.2);
+          width: 30px;
+          height: 100%;
+          left: 30px;
+          top: 0;
+          opacity: 0;
+          filter: blur(30px);
+          transform: translate(-100px) scaleX(-15deg);
+      }
+      button:hover{
+          background: black;
+          cursor: pointer;
+      }
+      button:hover:before{
+          transform: translateX(300px) skewX(-15deg);
+          opacity: .6;
+          transition: .7s;
+          
+      }
+      button:hover:after{
+          transform: translateX(300px) skewX(-15deg);
+          opacity: .6;
+          transition: .7s;
+      }
+      h1{
+          animation: type 3s steps(26);
+          overflow: hidden;
+          white-space: nowrap;
+          font-family: consolas;
+          border-right: 4px solid black;
+          width: 26ch;
+          margin-top: 200px;
+          
+          
+      }
+      @keyframes type{
+          0%{
+              width: 0ch;
+          }
+          100%{
+              width: 26ch;
+          }
+      }
+      
+        
+         
+        
+    
+    
+  </style>
+
+</head>
+
+<body>
+
+      <center><h1>BigMusicClubConclomerate’s</h1></center>
+    <div class="wrapper">
+    <div class="btn">
+          <a href="venues.html"><button>Events</button></a>
+        </div>
+    </div>
+      
+</body>
+</html>
